@@ -1,0 +1,15 @@
+### 현제 profile이 local일떄 실행하는 설정이다.
+Spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3307/demo_momo
+    username: demo_momo
+    password: likelion123momo
+  jpa:
+    hibernate:
+      # 테스트한 내용을 남겨놓고 싶으면 update 또는 none
+      ddl-auto: none # test를 위해 create했음, 보통은 none을 함
+    show-sql: false  # 실제로 Query문이 작동될떄 로그상 보여주기
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect # mysql 사용을 hibernate에게 알려준다.
