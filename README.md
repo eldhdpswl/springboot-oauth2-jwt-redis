@@ -1,1 +1,1 @@
-# springboot-react-jwt
+# springboot-oauth2-jwt-redis
